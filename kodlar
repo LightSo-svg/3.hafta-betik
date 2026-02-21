@@ -1,0 +1,42 @@
+f = open("türkmenistan.txt",'r',encoding='utf-8')
+print(f.read())
+
+with open("türkmenistan.txt", "w") as f:
+  f.write("nasiba")
+
+  try:
+
+   f = open("türkmen.txt", "x")
+
+  except:
+
+    print("böyle bir dosya mevcut,başka bir isim dene")
+
+    isimler=['Eren','nasiba','guncha','gulsenem','ırmak']
+
+   for isim in isimler:
+     print(isim)
+
+
+
+
+from abc import *
+
+for i in ogrenciler:
+    print(i)
+    print(i['yas'])
+
+if i['cinsiyet']=='erkek'and i["yas"]<20:
+    
+    print(i)
+
+
+
+from trc import *
+sayac= 0
+for bilgi in bilgiler:
+    sayac+=1
+    try:
+        print (bilgi['status'])
+    except:
+        print(sayac)
